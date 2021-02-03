@@ -2,9 +2,9 @@ package com.restaurante.menu;
 
 public class Plato {
 	private String nombre;
-	private float precio;
+	private double precio;
 	
-	public Plato(String nombre, float precio) {
+	public Plato(String nombre, double precio) {
 		this.nombre = nombre;
 		this.precio = precio;
 	}
@@ -17,12 +17,19 @@ public class Plato {
 		this.nombre = nombre;
 	}
 
-	public float getPrecio() {
+	public double getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(float precio) {
+	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
+
+	@Override
+	public String toString() {
+		return "Plato [nombre=" + nombre + ", precio=" + precio + "]";
+	}
+	
+	
 	
 }
